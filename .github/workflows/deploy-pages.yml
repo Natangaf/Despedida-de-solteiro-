@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["claude/gustavo-bachelor-party-site-3rbl5l"]
+    branches: ["main", "claude/gustavo-bachelor-party-site-3rbl5l"]
   workflow_dispatch:
 
 permissions:

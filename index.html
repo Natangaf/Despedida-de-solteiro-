@@ -7,218 +7,197 @@
 <meta name="description" content="Despedida de Solteiro do Gustavo — 03 e 04 de Outubro. Uma noite para ficar na história!">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="bg-decor" aria-hidden="true"></div>
+<div class="bg-photo" aria-hidden="true"></div>
+<div class="bg-tint" aria-hidden="true"></div>
 
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="#home" class="logo">
-      <span class="logo__icon">🎩</span>
-    </a>
-    <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#programacao">Programação</a>
-      <a href="#local">Local</a>
-      <a href="#confirme">Confirme sua Presença</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--outline btn--nav">Confirmar Presença</a>
+<div class="wrap">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__left">
+      <div class="nav__logo">
+        <svg viewBox="0 0 48 54" width="46" height="52" fill="none">
+          <path d="M24 2 L44 9 V30 C44 42 35 50 24 53 C13 50 4 42 4 30 V9 Z" stroke="#d9a834" stroke-width="1.6" fill="rgba(217,168,52,.06)"></path>
+          <path d="M24 15 L20 20 H28 Z" fill="#e9c261"></path>
+          <rect x="22.6" y="20" width="2.8" height="22" fill="#e9c261"></rect>
+          <path d="M15 22 L24 20 L33 22 L30 42 H18 Z" fill="rgba(233,194,97,.14)" stroke="#d9a834" stroke-width="1"></path>
+          <path d="M17 24 L24 26 L24 41 Z" fill="#0c0a08"></path>
+          <path d="M31 24 L24 26 L24 41 Z" fill="#0c0a08"></path>
+          <path d="M18 27 L24 24 L24 27 L20 33 Z" fill="#e9c261"></path>
+          <path d="M30 27 L24 24 L24 27 L28 33 Z" fill="#e9c261"></path>
+        </svg>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="is-active">HOME</a>
+        <a href="#detalhes">PROGRAMAÇÃO</a>
+        <a href="#countdown">LOCAL</a>
+        <a href="#rsvp">CONFIRME SUA PRESENÇA</a>
+        <a href="#galeria">GALERIA</a>
+        <a href="#contato">CONTATO</a>
+      </div>
+    </div>
+    <a class="nav-cta" href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ" target="_blank" rel="noopener">CONFIRMAR PRESENÇA</a>
     <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+  </nav>
+  <div class="nav-links-mobile" id="navMobile">
+    <a href="#home">HOME</a>
+    <a href="#detalhes">PROGRAMAÇÃO</a>
+    <a href="#countdown">LOCAL</a>
+    <a href="#rsvp">CONFIRME SUA PRESENÇA</a>
+    <a href="#galeria">GALERIA</a>
+    <a href="#contato">CONTATO</a>
   </div>
-</header>
 
-<main>
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero__inner">
-      <div class="hero__text">
-        <p class="eyebrow"><span></span>DESPEDIDA DE<span></span></p>
-        <h1 class="hero__title">SOLTEIRO</h1>
-        <p class="hero__script">Do Gustavo!</p>
-        <div class="bowtie-divider">🎀</div>
-        <p class="hero__tagline">UMA NOITE PARA FICAR <span>NA HISTÓRIA!</span></p>
-        <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--outline">🍺 VOCÊ FOI CONVOCADO!</a>
+  <section id="home" class="hero">
+    <div>
+      <div class="hero-eyebrow-row">
+        <span class="rule rule--l"></span>
+        <span class="hero-eyebrow">DESPEDIDA DE</span>
+        <span class="rule rule--r"></span>
       </div>
-      <div class="hero__photo-wrap">
-        <img src="assets/gustavo-cutout.png" alt="Gustavo, o noivo" class="hero__photo">
-        <div class="hero__badge">
-          <span class="hero__badge-top">TIME DO NOIVO</span>
-          <span class="hero__badge-bowtie">🎀</span>
-          <span class="hero__badge-main">MISSÃO:<br>FAZER HISTÓRIA!</span>
-          <span class="hero__badge-stars">★ ★ ★</span>
-        </div>
+      <h1 class="hero-title">SOLTEIRO</h1>
+      <div class="hero-script">Do Gustavo!</div>
+      <div class="hero-divider">
+        <span class="hero-divider__line"></span>
+        <svg viewBox="0 0 40 22" width="42" height="24"><path d="M20 11 L6 3 L6 19 Z" fill="#e9c261"></path><path d="M20 11 L34 3 L34 19 Z" fill="#e9c261"></path><rect x="17" y="7" width="6" height="8" rx="1.5" fill="#c9992f"></rect></svg>
+      </div>
+
+      <p class="hero-sub">UMA NOITE PARA FICAR <span>NA HISTÓRIA!</span></p>
+
+      <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ" target="_blank" rel="noopener" class="hero-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#e9c261" stroke-width="1.7"><path d="M6 11h9a3 3 0 0 1 0 6h-1"></path><path d="M6 8h9v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"></path><path d="M8 3v2M11 3v2M14 3v2"></path></svg>
+        VOCÊ FOI CONVOCADO!
+      </a>
+
+      <div class="hero-scroll">
+        <svg viewBox="0 0 30 18" width="34" height="20" fill="none" stroke="#d9a834" stroke-width="2.4" stroke-linecap="round"><path d="M4 4 L15 14 L26 4"></path></svg>
       </div>
     </div>
-    <a href="#detalhes" class="scroll-down" aria-label="Rolar para baixo">⌄</a>
-  </section>
 
-  <!-- DETALHES DO EVENTO -->
-  <section class="details" id="detalhes">
-    <div class="container">
-      <h2 class="section-title"><span></span>DETALHES DO EVENTO<span></span></h2>
-
-      <div class="details__cards">
-        <div class="detail-card">
-          <div class="detail-card__icon">📅</div>
-          <p class="detail-card__label">DATA</p>
-          <p class="detail-card__value">03 e 04/10</p>
-          <p class="detail-card__sub">SÁBADO E DOMINGO</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-card__icon">🕒</div>
-          <p class="detail-card__label">HORÁRIO</p>
-          <p class="detail-card__value">A CONFIRMAR</p>
-          <p class="detail-card__sub">FIQUE DE OLHO NO GRUPO</p>
-        </div>
-        <div class="detail-card">
-          <div class="detail-card__icon">📍</div>
-          <p class="detail-card__label">LOCAL</p>
-          <p class="detail-card__value">EM BREVE</p>
-          <p class="detail-card__sub">REVELADO NO GRUPO</p>
-        </div>
-      </div>
-
-      <div class="countdown">
-        <h3 class="countdown__title">⚡ FALTAM ⚡</h3>
-        <div class="countdown__grid" id="countdown">
-          <div class="countdown__box">
-            <span class="countdown__num" id="cd-days">00</span>
-            <span class="countdown__label">DIAS</span>
-          </div>
-          <div class="countdown__box">
-            <span class="countdown__num" id="cd-hours">00</span>
-            <span class="countdown__label">HORAS</span>
-          </div>
-          <div class="countdown__box">
-            <span class="countdown__num" id="cd-min">00</span>
-            <span class="countdown__label">MINUTOS</span>
-          </div>
-          <div class="countdown__box">
-            <span class="countdown__num" id="cd-sec">00</span>
-            <span class="countdown__label">SEGUNDOS</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="cta-banner">
-        <p class="cta-banner__text">
-          🍻 <strong>CHAME OS PARÇAS</strong><br>
-          E SE PREPARE PARA ESSA!<br>
-          O NOIVO MERECE ESSA LENDA.
-        </p>
-        <div class="cta-banner__action">
-          <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--solid">📱 CONFIRMAR PRESENÇA</a>
-          <p class="cta-banner__note">ENTRE NO GRUPO PARA CONFIRMAR</p>
-        </div>
+    <!-- groom photo -->
+    <div class="hero-photo">
+      <div class="hero-photo__glow"></div>
+      <img src="assets/gustavo-cutout.png" alt="Gustavo, o noivo">
+      <div class="hero-badge">
+        <div class="hero-badge__top">★ TIME DO NOIVO ★</div>
+        <svg viewBox="0 0 40 20" width="30" height="16"><path d="M20 10 L7 3 L7 17 Z" fill="#e9c261"></path><path d="M20 10 L33 3 L33 17 Z" fill="#e9c261"></path><rect x="17.5" y="6.5" width="5" height="7" rx="1.2" fill="#c9992f"></rect></svg>
+        <div class="hero-badge__mission">MISSÃO:<br>FAZER<br>HISTÓRIA!</div>
+        <div class="hero-badge__stars">★ ★ ★</div>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMAÇÃO -->
-  <section class="programacao" id="programacao">
-    <div class="container">
-      <h2 class="section-title"><span></span>PROGRAMAÇÃO<span></span></h2>
-      <p class="section-subtitle">Dois dias de resenha, história e muita zoeira</p>
+  <!-- DETALHES -->
+  <section id="detalhes" class="details">
+    <div class="section-head">
+      <span class="section-rule"></span>
+      <h2 class="section-title">DETALHES DO EVENTO</h2>
+      <span class="section-rule"></span>
+    </div>
 
-      <div class="timeline">
-        <div class="timeline__day">
-          <h3 class="timeline__day-title">DIA 1 <span>· 03/10 · SÁBADO</span></h3>
-          <ul class="timeline__list">
-            <li><span class="timeline__dot"></span>Chegada e recepção da galera</li>
-            <li><span class="timeline__dot"></span>Churrasco e resenha</li>
-            <li><span class="timeline__dot"></span>Jogos e desafios do noivo</li>
-            <li><span class="timeline__dot"></span>Noite livre — bora pra night!</li>
-          </ul>
-        </div>
-        <div class="timeline__day">
-          <h3 class="timeline__day-title">DIA 2 <span>· 04/10 · DOMINGO</span></h3>
-          <ul class="timeline__list">
-            <li><span class="timeline__dot"></span>Café da manhã / recuperação</li>
-            <li><span class="timeline__dot"></span>Atividade surpresa</li>
-            <li><span class="timeline__dot"></span>Almoço em grupo</li>
-            <li><span class="timeline__dot"></span>Despedida e volta pra casa</li>
-          </ul>
-        </div>
+    <div class="details-grid">
+      <div class="details-card">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#e9c261" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 3v4M16 3v4"></path><rect x="7" y="12" width="3" height="3" fill="#e9c261" stroke="none"></rect><rect x="14" y="12" width="3" height="3" fill="#e9c261" stroke="none"></rect></svg>
+        <div class="details-card__label">DATA</div>
+        <div class="details-card__value">03 E 04/10</div>
+        <div class="details-card__sub">SÁBADO E DOMINGO</div>
       </div>
-      <p class="timeline__note">* Programação sujeita a ajustes — os detalhes finais serão enviados no grupo do WhatsApp.</p>
+      <div class="details-card">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#e9c261" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
+        <div class="details-card__label">HORÁRIO</div>
+        <div class="details-card__value">18:00</div>
+        <div class="details-card__sub">ATÉ O SOL NASCER</div>
+      </div>
+      <div class="details-card details-card--last">
+        <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#e9c261" stroke-width="1.5"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+        <div class="details-card__label">LOCAL</div>
+        <div class="details-card__value">EM BREVE</div>
+        <div class="details-card__sub">AGUARDE PISTAS...</div>
+      </div>
     </div>
   </section>
 
-  <!-- LOCAL -->
-  <section class="local" id="local">
-    <div class="container local__inner">
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="countdown">
+    <div class="section-head">
+      <span class="bolt">⚡</span>
+      <h2 class="countdown-title">FALTAM</h2>
+      <span class="bolt">⚡</span>
+    </div>
+    <div class="count-grid">
+      <div class="count-box">
+        <div class="count-num" id="cd-days">--</div>
+        <div class="count-label">DIAS</div>
+      </div>
+      <div class="count-box">
+        <div class="count-num" id="cd-hours">--</div>
+        <div class="count-label">HORAS</div>
+      </div>
+      <div class="count-box">
+        <div class="count-num" id="cd-min">--</div>
+        <div class="count-label">MINUTOS</div>
+      </div>
+      <div class="count-box">
+        <div class="count-num" id="cd-sec">--</div>
+        <div class="count-label">SEGUNDOS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="rsvp" class="cta">
+    <div class="cta-grid">
+      <svg class="cta-icon" viewBox="0 0 48 48" width="58" height="58" fill="none" stroke="#e9c261" stroke-width="1.6"><path d="M10 20h9l3 18H13z"></path><path d="M29 20h9l-3 18h-9"></path><path d="M19 20l3 18M29 20l-3 18"></path><path d="M14 15l-2-4M22 13v-4M30 15l2-4"></path></svg>
       <div>
-        <h2 class="section-title section-title--left"><span></span>LOCAL</h2>
-        <p class="local__text">
-          O point da despedida ainda é <strong>segredo</strong>! 🤫<br><br>
-          O local será revelado exclusivamente para quem confirmar presença no grupo oficial do WhatsApp.
-          Entra logo pra não ficar de fora!
-        </p>
-        <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--solid">📱 ENTRAR NO GRUPO E DESCOBRIR</a>
+        <div class="cta-title">CHAME OS PARÇAS</div>
+        <div class="cta-text">E SE PREPARE PARA ESSA!</div>
+        <div class="cta-text">O NOIVO MERECE ESSA LENDA.</div>
       </div>
-      <div class="local__card">
-        <span class="local__card-icon">📍</span>
-        <p class="local__card-title">AGUARDE PISTAS...</p>
-        <p class="local__card-sub">Revelado no grupo do WhatsApp</p>
+      <div class="cta-action">
+        <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ" target="_blank" rel="noopener" class="cta-btn">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#1a1206"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 6.9 12l-.3.5.7 2.6-2.7-.7-.5.3A8 8 0 1 1 12 4zm-3.2 3.6c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.2-.5-2.2-1.4-.8-.7-1.4-1.6-1.5-1.8-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.4-.4-.4-.6-.4z"></path></svg>
+          CONFIRMAR PRESENÇA
+        </a>
+        <div class="cta-deadline">CONFIRME ATÉ 28/09</div>
       </div>
-    </div>
-  </section>
-
-  <!-- CONFIRME SUA PRESENÇA -->
-  <section class="confirme" id="confirme">
-    <div class="container confirme__inner">
-      <h2 class="section-title"><span></span>CONFIRME SUA PRESENÇA<span></span></h2>
-      <p class="confirme__text">
-        Clique no botão abaixo, entre no grupo oficial do WhatsApp e confirme sua presença.
-        É lá que vamos combinar tudo: local, horários e novidades de última hora.
-      </p>
-      <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--solid btn--lg">📱 CONFIRMAR PRESENÇA NO GRUPO</a>
-      <p class="confirme__deadline">Confirme o quanto antes — vagas e planos dependem de saber quem vem!</p>
     </div>
   </section>
 
   <!-- GALERIA -->
-  <section class="galeria" id="galeria">
-    <div class="container">
-      <h2 class="section-title"><span></span>GALERIA<span></span></h2>
-      <p class="section-subtitle">Os melhores momentos vão parar aqui depois da festa 📸</p>
-      <div class="galeria__grid">
-        <div class="galeria__tile"><span>🎉</span></div>
-        <div class="galeria__tile"><span>🍻</span></div>
-        <div class="galeria__tile"><span>🎩</span></div>
-        <div class="galeria__tile"><span>🥳</span></div>
-        <div class="galeria__tile"><span>🎶</span></div>
-        <div class="galeria__tile"><span>📸</span></div>
-      </div>
-      <p class="galeria__note">Em breve, as fotos e vídeos da despedida serão adicionados aqui!</p>
+  <section id="galeria" class="galeria">
+    <div class="section-head">
+      <span class="section-rule"></span>
+      <h2 class="section-title">GALERIA</h2>
+      <span class="section-rule"></span>
     </div>
+    <div class="galeria-grid">
+      <div class="galeria-tile"><span>🎉</span></div>
+      <div class="galeria-tile"><span>🍻</span></div>
+      <div class="galeria-tile"><span>🎩</span></div>
+      <div class="galeria-tile"><span>🥳</span></div>
+      <div class="galeria-tile"><span>🎶</span></div>
+      <div class="galeria-tile"><span>📸</span></div>
+    </div>
+    <p class="galeria-note">As fotos e vídeos da despedida entram aqui depois da festa!</p>
   </section>
 
-  <!-- CONTATO -->
-  <section class="contato" id="contato">
-    <div class="container contato__inner">
-      <h2 class="section-title"><span></span>CONTATO<span></span></h2>
-      <p class="contato__text">Dúvidas, sugestões ou quer ajudar a organizar? Fala com a gente no grupo!</p>
-      <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ?s=sh&p=a&mlu=4" target="_blank" rel="noopener" class="btn btn--outline">💬 FALAR NO WHATSAPP</a>
-    </div>
+  <!-- QUOTE -->
+  <section id="contato" class="quote">
+    <svg viewBox="0 0 34 22" width="34" height="22"><path d="M3 19 L7 6 L12 13 L17 4 L22 13 L27 6 L31 19 Z" fill="none" stroke="#d9a834" stroke-width="1.6"></path><circle cx="7" cy="6" r="2" fill="#e9c261"></circle><circle cx="17" cy="4" r="2" fill="#e9c261"></circle><circle cx="27" cy="6" r="2" fill="#e9c261"></circle></svg>
+    <p class="quote-text">"HOJE ELE ESCOLHE A LIBERDADE. AMANHÃ, A AVENTURA CONTINUA."</p>
+    <svg viewBox="0 0 40 20" width="40" height="20"><path d="M20 10 L7 3 L7 17 Z" fill="#c9992f"></path><path d="M20 10 L33 3 L33 17 Z" fill="#c9992f"></path><rect x="17.5" y="6.5" width="5" height="7" rx="1.2" fill="#e9c261"></rect></svg>
+    <a href="https://chat.whatsapp.com/EFHEPmSHwKG4vsdPj4MZtJ" target="_blank" rel="noopener" class="quote-cta">💬 FALAR NO WHATSAPP</a>
   </section>
-</main>
 
-<footer class="footer">
-  <div class="container">
-    <p class="footer__crown">👑</p>
-    <p class="footer__quote">"HOJE ELE ESCOLHE A LIBERDADE. AMANHÃ, A AVENTURA CONTINUA."</p>
-    <p class="footer__bowtie">🎀</p>
-    <p class="footer__copy">Despedida de Solteiro do Gustavo · 03 e 04 de Outubro</p>
-  </div>
-</footer>
+</div>
 
 <script src="js/script.js"></script>
 </body>

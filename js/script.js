@@ -1,5 +1,5 @@
-// Countdown até a despedida de solteiro do Gustavo — 03/10/2026
-const EVENT_DATE = new Date('2026-10-03T00:00:00');
+// Countdown até a despedida de solteiro do Gustavo — 03/10/2026 18:00
+const EVENT_DATE = new Date('2026-10-03T18:00:00');
 
 function pad(n) {
   return String(n).padStart(2, '0');
@@ -40,17 +40,17 @@ setInterval(updateCountdown, 1000);
 
 // Menu mobile
 const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
+const navMobile = document.getElementById('navMobile');
 
-if (hamburger && nav) {
+if (hamburger && navMobile) {
   hamburger.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
+    const isOpen = navMobile.classList.toggle('is-open');
     hamburger.setAttribute('aria-expanded', String(isOpen));
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
+  navMobile.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
+      navMobile.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', 'false');
     });
   });

@@ -1,5 +1,5 @@
-// Countdown até a despedida de solteiro do Gustavo — 02/10/2026
-const EVENT_DATE = new Date('2026-10-02T00:00:00');
+// Countdown até a despedida de solteiro do Gustavo — 03/10/2026
+const EVENT_DATE = new Date('2026-10-03T00:00:00');
 
 function pad(n) {
   return String(n).padStart(2, '0');

@@ -149,6 +149,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   padding: 70px 0 40px;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(11,10,9,0.55) 0%, rgba(11,10,9,0.75) 60%, var(--black) 100%), url('../assets/hero-bg.jpg') center top / cover no-repeat;
 }
 
 .hero__inner {
@@ -210,20 +211,18 @@ img { max-width: 100%; display: block; }
 
 .hero__photo-wrap {
   position: relative;
-  border-radius: 20px;
   overflow: visible;
 }
 
 .hero__photo {
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border-gold);
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.55));
 }
 
 .hero__badge {
   position: absolute;
-  right: -10px;
-  bottom: 10px;
+  right: 10px;
+  bottom: 40px;
   width: 130px;
   height: 130px;
   border-radius: 50%;
